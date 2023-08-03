@@ -5,15 +5,17 @@ Originally by Binay Gurung
 Modified by Leo Wong
 
 Further Modified by: Christopher Kwan (ktckwan@connect.ust.hk)
+
+Further Modified by: Andy Li (ckliam@connect.ust.hk)
 ***
 
 [![HackMD Version](https://img.shields.io/badge/Made%20with-Markdown-1f425.svg)](https://hackmd.io/@ATKTC/SkKJ7ECJi)
 
 
 ## **Printing something**
-> When learning programming, most of the integrated development environment (IDE) you will/might have used will have a console for output and will often be used for debugging for you to keep track of certain variables and to trace-out truth tables or so forth.
+- When learning programming, most of the integrated development environment (IDE) you will/might have used will have a console for output and will often be used for debugging for you to keep track of certain variables and to trace-out truth tables or so forth.
 
->  In different programming languages, you can print/show your variable's value in the program using print function.
+-  In different programming languages, you can print/show your variable's value in the program using print function.
 
 ### For Example
 
@@ -43,7 +45,10 @@ System.out.println("The value of c-squared is " + c*c);
 
 In our embedded system, usually we do not have a console to output our variable values to when debugging. 
 
-However, with the help of TFT (a small LCD monitor), you will be able to **"print out"** the values of your variable on a **monitor**.
+However, with the help of TFT , you will be able to **"print out"** the values of your variable on a **monitor**.
+
+#### What is TFT ???
+TFT (Thin-Film Transistor) is a type of LCD flat-panel display screen in which each pixel is controlled by one to four transistors. The TFT technology provides the best resolution of all the flat-panel techniques, but it is also the most expensive.
 
 ***
 ## **Initialize TFT**
