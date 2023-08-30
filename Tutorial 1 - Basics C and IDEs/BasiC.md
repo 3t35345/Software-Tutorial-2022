@@ -429,7 +429,7 @@ No specifiers.
 
 ### Console Input
 
-The function `int scanf(const char*, ...)` reads input from the console and stores it into the given variables. To read variables, specify the data type token and provide the address to the variable. The syntax for `scanf` is similar to `printf`, but an **ampersand** (`&`) is required before the variable name.
+The function `int scanf(const char*, ...)` reads input from the console and stores it in the given variables. To read variables, specify the data type token and provide the address to the variable. The syntax for `scanf` is similar to `printf`, but an **ampersand** (`&`) is required before the variable name.
 
 ```c=
 #include <stdio.h>
@@ -453,7 +453,7 @@ int main() {
 
 > **Q**: What is the use of `&`?
 > 
-> **A**: A variable consists of a name, value and address. `&` returns the address of the variable. This topic (pointers) will be taught in depth in later advanced notes which will not be covered in this tutorial.
+> **A**: A variable consists of a name, value, and address. `&` returns the address of the variable. This topic (pointers) will be taught in depth in later advanced notes which will not be covered in this tutorial.
 
 > [classwork-04](https://hackmd.io/Fpr8vuHJS1WGAyE3t-Omfg?view#ex-4)
 
@@ -473,9 +473,9 @@ int var_99;
 ```
 Although this above method is possible, it is not efficient or feasible. Hence, we use **Array**.
 
-Array is another type of variable. It is a container for multiple values of the same type. Arrays carries type information and can only carry one type of values in one array. Think arrays as cabinets, and each value belong in one drawer in a cabinet.
+Array is another type of variable. It is a container for multiple values of the same type. Arrays carry type information and can only carry one type of value in one array. Think of arrays as cabinets, and each value belongs in one drawer in a cabinet.
 
-An array must have a **constant length**, specified either at declaration, or interpreted at initialization.
+An array must have a **constant length**, specified either at declaration or interpreted at initialization.
 
 Refer to [cppreference](https://en.cppreference.com/w/c/language/array) for more details.
 
@@ -493,7 +493,7 @@ float numbers[10];
 
 ### Array Initialization
 
-An array can be initialized alongside declaration with values, by using the initializer expression, like so:
+An array can be initialized alongside a declaration with values, by using the initializer expression, like so:
 
 ```c=
 int natural_numberes[20] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}; //remaining spaces are filled with 0s
@@ -527,7 +527,7 @@ int y = numbers [0]; //y is 3
 
 **Accessing outside the array region is an undefined behavior but may not generate any error when used.** Values are retrieved at other memory addresses that do not belong to the array and the values are not guaranteed as the same across machines. Accessing outside of program memory will produce a "SIGSEGV Signal Segmentation Fault" runtime error.
 
-Arrays are usually used with for loops, to iterate over the length of the array for data manipulation.
+Arrays are usually used for-loops, to iterate over the length of the array for data manipulation.
 
 This example populates the array with natural numbers:
 
@@ -644,7 +644,7 @@ Operators help us to perform the most fundamental mathematical or logical operat
   Takes three operands
   `x ? y : z`
   
-**Beware that different operators carry different precedences**, meaning values are evaluated from the operator with highest precedence down to the lowest, like how multiplication comes first before addition in maths. 
+**Beware that different operators carry different precedences**, meaning values are evaluated from the operator with the highest precedence down to the lowest, like how multiplication comes first before addition in maths. 
 
 ### Assignment Operators
 
@@ -702,7 +702,7 @@ In contrast to this, `5.0f` and `2.0f` are floats, so floating-point division is
 
 ### Relational Operators
 
-A relational operator compares the value of two expressions, most of which are self explanatory. These operators take two operators and return `true`/`1` or `false`/`0`.
+A relational operator compares the value of two expressions, most of which are self-explanatory. These operators take two operators and return `true`/`1` or `false`/`0`.
 
 
 - `==` equal to (B)
@@ -713,7 +713,7 @@ A relational operator compares the value of two expressions, most of which are s
 - `<=` less than or equal to (B)
 
 > :Warning: **Warning:**
-> *Do not mix up `=` and `==`*. One is used for value assignment, the other used to compare whether the values are the same.
+> *Do not mix up `=` and `==`*. One is used for value assignment, and the other is used to compare whether the values are the same.
 
 ### Logical Operators
 
@@ -753,7 +753,7 @@ A statement is a fragment of code in C. All statement types are on [cppreference
 
 ### Expression Statements
 
-Expression statements are the lines of code that ends in `;`. Or in other words: an expression statement is **a line of code**. Most statements are expression statements.
+Expression statements are the lines of code that end in `;`. Or in other words: an expression statement is **a line of code**. Most statements are expression statements.
 
 For example:
 ```c=
@@ -860,7 +860,7 @@ Switch statements allow a variable to be tested for each case. It contains **jum
 
 - `switch (<expression>) <statement>`
 
-  The "expression" here must evaluate to some integral value. And the "statement" here is typically a block with case labels.
+  The "expression" here must evaluate to some integral value. The "statement" here is typically a block with case labels.
 
 - `case <integer_constant_expression>: <statement>`
 - `default: <statement>`
@@ -880,9 +880,9 @@ switch (x) {//value to compare against with the cases
 }
 ```
 
-Each case is compared against the expression in the switch parenthesis, if a match is found, the program **jumps** to that case and start executing line by line, and only exits when encountering `break;` or when the code block ends.
+Each case is compared against the expression in the switch parenthesis, if a match is found, the program **jumps** to that case and starts executing line by line, and only exits when encountering `break;` or when the code block ends.
 
-Basically, switch-statements are just if-statements when all their conditions are `x == case`.
+Basically, switch statements are just if-statements when all their conditions are `x == case`.
 
 ### Iteration Statements
 
@@ -922,7 +922,7 @@ If `is_repeated` is `ture`, the statement will keep looping until `is_repeated` 
 
 #### For Loop
 
-Often, developers use while loops to execute code while counting. For loops were introduced to simplify this situation, while encasing the **iterator** (the counting number) within the scope. The following example illustrates this.
+Often, developers use while loops to execute code while counting. For loops were introduced to simplify this situation while encasing the **iterator** (the counting number) within the scope. The following example illustrates this.
 
 ```c=
 //This program prints from 0 to 9
@@ -938,7 +938,7 @@ for (int i = 0; i < 10; i++) {
 }
 ```
 
-The for loop format is as follows:
+The for-loop format is as follows:
 
 - `for (<init_clause>; <expression (optional)>; <expression (optional)>) <statement>`
 
@@ -956,7 +956,7 @@ The 3 clauses in the parenthesis are usually called:
 
   This expression is run after every iteration of the loop. Usually, the iterator is incremented or decremented here.
   
-This is the for loop version of the number printing program above:
+This is the for-loop version of the number printing program above:
 
 ```c=
 for (int i = 0; i < 10; i++) {
@@ -971,7 +971,7 @@ for (int i = 0; i < 10; i++)
     printf("%d\n", i);
 ```
 
-In fact, you can omit the one of the clauses, or even all of them:
+In fact, you can omit one of the clauses or even all of them:
 
 ```c=
 int i = 0;
@@ -999,7 +999,7 @@ Jump statements alter the flow of the program by literally jumping to a differen
 
 - `continue;`
 
-  This statement is only valid in loops. It breaks from the current iteration and executes the final expression if the loop is a for loop, then it will move to the condition for comparision immediately, *continuing* the loop.
+  This statement is only valid in loops. It breaks from the current iteration and executes the final expression if the loop is a for loop, then it will move to the condition for comparison immediately, *continuing* the loop.
   
   Example:
   ```c=
@@ -1012,7 +1012,7 @@ Jump statements alter the flow of the program by literally jumping to a differen
 
 - `return <expression (optional)>;`
 
-  This statement is only valid in functions. It terminates the function, then *returns* a resulting value to the caller. It is seen in the `main()` function, returning a program termination code to the operating system.
+  This statement is only valid in functions. It terminates the function, and then *returns* a resulting value to the caller. It is seen in the `main()` function, returning a program termination code to the operating system.
   
   `return;` is treated as returning `void`.
 
@@ -1028,7 +1028,7 @@ A function is a collection of commands that perform tasks. `printf()` and `scanf
 
 Being like variables, functions can only be accessed after the compiler knows about it, reading from the top. So to use a function in `main()` for example, it either has to be defined above, or declared above and defined elsewhere.
 
-If a function is declared before, then the compiler knows about its existence, and expect it to be defined some time in the future as it reads from file to file. The definition can be in any place in any file, as long as it is in some place the compiler expects.
+If a function is declared before, then the compiler knows about its existence, and expects it to be defined sometime in the future as it reads from file to file. The definition can be in any place in any file, as long as it is in some place the compiler expects.
 
 If the function is declared, used, but not defined, then the compiler will generate a `reference to function not found` error.
 
@@ -1099,7 +1099,7 @@ int calculator(int a, int b, int (*operation)(int, int));
 
 ### Function Definition
 
-Functions can be used by simply defining one. Declaration is not compulsory.
+Functions can be used by simply defining one. The declaration is not compulsory.
 
 The most commonly used function definition syntax is as follows:
 ```c
@@ -1108,7 +1108,7 @@ The most commonly used function definition syntax is as follows:
 }
 ```
 
-In `<parameters...>`, parameters are separated by a `,` (comma operator). Each parameter consist of `<type_specifier> <parameter_name>`. The type specifier specifies the type of parameter the function accepts, and the parameter name is some arbitrary name, used and only meaningful inside the function.
+In `<parameters...>`, parameters are separated by a `,` (comma operator). Each parameter consists of `<type_specifier> <parameter_name>`. The type specifier specifies the type of parameter the function accepts, and the parameter name is some arbitrary name, used and only meaningful inside the function.
 
 For example:
 
@@ -1135,7 +1135,7 @@ Then we can call it by `square(3)` for example, it would return `9` at the calli
 
 A function call takes form of: `<function_name>(<parameters...>)`
 
-A C function call/invocation is same as those of mathematical functions, for which they accept parameters as inputs and returns an output as a response, although C functions can also perform simple actions without any response. The parameters provided to a function call can be variables or literals, just anything that carries a value.
+A C function call/invocation is the same as those of mathematical functions, for which they accept parameters as inputs and return an output as a response, although C functions can also perform simple actions without any response. The parameters provided to a function call can be variables or literals, just anything that carries a value.
 
 For example:
 
@@ -1156,19 +1156,19 @@ int main(){
 
 ## Program Time
 
-There are mainly 3 time periods of a compiled program:
+There are 3 main time periods of a compiled program:
 
 - Compile time
 
-  During compilation. Compiler catches syntax errors and other compile time errors here. If there is an error, the program will not be built.
+  During compilation. The compiler catches syntax errors and other compile-time errors here. If there is an error, the program will not be built.
 
 - Link time
 
-  The compiler links different bits of compiled code after compilation. In future compilations, the compiler will only compile changed files and run the linker again. Linking error may occur if references to objects are not found, or when compiling for embedded systems, memory allocations exceeded maximum memory allowance.
+  The compiler links different bits of compiled code after compilation. In future compilations, the compiler will only compile changed files and run the linker again. Linking error may occur if references to objects are not found, or when compiling for embedded systems, memory allocations exceed maximum memory allowance.
 
 - Runtime
 
-  This is when the program is running. Unless the program is in **debug mode**, errors here may result in the program crashing without any messages. During debugging, fatal runtime errors will trigger a **breakpoint** and an error message and the erroneous line is displayed.
+  This is when the program is running. Unless the program is in **debug mode**, errors here may result in the program crashing without any messages. During debugging, fatal runtime errors will trigger a **breakpoint** and an error message, and the erroneous line is displayed.
   
 ## What should I do if I get stuck while programming?
 
@@ -1177,11 +1177,16 @@ Although programming can be fun, debugging is stressful and exhausting. You may 
 * https://www.google.com/
 * https://stackoverflow.com/
 
-The easiest way to debug is to print stuff out, so that you can track (1) how your values change and (2) whether your code reaches a certain line of code (e.g. maybe an if-condition failed).
+The easiest way to debug is to print stuff out so that you can track (1) how your values change and (2) whether your code reaches a certain line of code (e.g. maybe an if-condition failed).
 
-If you really don't know which lines of code cause bugs, you can comment parts of your code and run the code again to see if the bugs reappear or not.
+If you really don't know which lines of code cause bugs, you can comment out parts of your code and run the code again to see if the bugs reappear or not.
 
 Enjoy your time debugging!
+
+## Using AI in coding 
+We welcome the integration of AI in software development. Using tools like ChatGPT to generate code or debug our code in English really makes our life a whole lot easier :) However, when using them in your programming work, you need to be aware that they only act as your __assistant__. They can streamline your work but you can't just blame ChatGPT if the code is not fully functional or it has many bugs. It's your job to double-check their work and fix any errors.
+
+free acceess to ChatGPT: https://poe.com/
 
 ## Reference Materials
 
