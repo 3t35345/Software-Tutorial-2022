@@ -38,4 +38,6 @@ Since I don't have a Mac :(, I cannot demonstrate how to install the compiler on
 ## Ubuntu
 The GCC compiler should be installed on Ubuntu by default. You can use the command `g++ -v` to check it.
 
+If you can't find the compiler for any reason, you can follow the instructions on this website http://gcc.gnu.org/install/ to install GCC back.
+
 
