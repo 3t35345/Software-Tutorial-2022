@@ -6,7 +6,8 @@ Updated by: Ho Yu Yat (yyhoai@connect.ust.hk), Lau Ka Kit, Danny (kkdlau@connect
 
 Further Modified by: Li Ka Yau Elwin (kyeliaa@connect.ust.hk), Leung Ka Chun, Wesley (kcleungax@connect.ust.hk)
 
-## Table of Content
+Further Further Modified by: Li Chi Kin (cklaim@connect.ust.hk)
+## Table of Contents
 
 [TOC]
 
