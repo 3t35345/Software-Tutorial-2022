@@ -4,7 +4,7 @@ Original Author: Chalex (cwchanbm@connect.ust.hk)
 
 Modified by: Li Ka Yau Elwin (kyeliaa@connect.ust.hk)
 
-## Table of Content
+## Table of Contents
 
 [TOC]
 
@@ -312,7 +312,7 @@ data.str : Robotics team
 ```
 Note that prior to printing the data members, the final value set is `"Robotics team"` to the `char s[15]` member.
 
-The result would be chaotic because all data members are stored in the same memory. The printed values will correspond to "Robotics team" in their own data type.
+The result would be chaotic because all data members are stored in the same memory. The printed values will correspond to the "Robotics team" in their own data type.
 
 ## Typedef
 **typedef**: Keyword for users to give a data type a new name.
@@ -367,9 +367,9 @@ day today = Monday;
 1. **File Inclusion**  
 Tells the compiler to include a file using the `#include` directive.
 
-    - **standard / header file**: files provided by the (standard) library. Contains pre-defined functions like `printf()`. These files are included with `<>`.
+    - **standard/header file**: files provided by the (standard) library. Contains pre-defined functions like `printf()`. These files are included with `<>`.
     Example: `#include <stdio.h>`
-    - **user-defined file**: header files defined/written by the user. It's a good practice to divide up functions into separate files and include only when needed. These files are included with `""`.
+    - **user-defined file**: header files defined/written by the user. It's a good practice to divide up functions into separate files and include them only when needed. These files are included with `""`.
     Example: `#include "mylibrary.h"`
 
 2. **Macro**  
@@ -458,7 +458,7 @@ Tells C to compile a specific portion of the program or to skip compilation of s
 
 ## Other Keywords
 
-**`static`** : variables / functions with this keyword can only be accessed within the scope they're declared in. 
+**`static`** : variables/functions with this keyword can only be accessed within the scope they're declared in. 
 
 ```c
 static int x = 0;
@@ -486,10 +486,10 @@ int main() {
 ```
 
 
-**`inline`** : functions defined with this keyword would expand to their definition within the code when they are called.
+**`inline`** : Functions defined with this keyword would expand to their definition within the code when they are called.
 
 > ### What's good about inline functions?
-> Inline functions expand their definition where called. This may help save cpu memory resources and time.
+> Inline functions expand their definition where called. This may help save CPU memory resources and time.
 
 > Inline functions are cool, but if you inline a *huge* function it could increase code size unnecessarily. So usually we only use this keyword on small and light functions.
 
