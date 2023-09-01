@@ -1185,9 +1185,10 @@ If you really don't know which lines of code cause bugs, you can comment out par
 Enjoy your time debugging!
 
 ## Using AI in coding 
-We welcome the integration of AI in software development. Using tools like ChatGPT to generate code or debug our code in English really makes our life a whole lot easier :) However, when using them in your programming work, you need to be aware that they only act as your __assistant__. They can streamline your work but you can't just blame ChatGPT if the code is not fully functional or it has many bugs. It's your job to double-check their work and fix any errors.
+We welcome the integration of AI in software development. Using tools like ChatGPT to generate code or debug our code in English really makes our lives a whole lot easier :) However, when using them in your programming work, you need to be aware that they only act as your __assistant__. They can streamline your work but you can't just blame ChatGPT if the code is not fully functional or it has many bugs. It's your job to double-check their work and fix any errors.
 
-free acceess to ChatGPT: https://poe.com/
+When you decide to use ChatGPT to generate code. It is strongly recommended that you should understand and analyze the logic behind the code. Not only does training your technical skills, but it can also help you document your code better. 
+
 
 ## Reference Materials
 
